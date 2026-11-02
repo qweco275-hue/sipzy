@@ -105,7 +105,7 @@ export const Home = () => {
               <div className="mt-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#F5E7DA] shadow-lg flex items-center gap-3">
                 <div className="w-11 h-11 rounded-xl bg-[#FFF9F3] p-1 border border-[#F5E7DA] shrink-0">
                   <img
-    src="/src/assets/images/product_artisan_latte_1793559240756.jpg"
+    src="/images/product_artisan_latte_1793559240756.jpg"
     alt="Latte"
     className="w-full h-full object-cover rounded-lg"
   />
