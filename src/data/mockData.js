@@ -263,7 +263,7 @@ export const REWARDS_DATA = [
     category: "Minuman Gratis",
     voucherCode: "SIPZY-KOPF-500",
     validUntil: "Berlaku 30 hari setelah penukaran",
-    image: "/src/assets/images/product_artisan_latte_1793559240756.jpg"
+    image: "/images/product_artisan_latte_1793559240756.jpg"
   },
   {
     id: "rew_02",
@@ -273,7 +273,7 @@ export const REWARDS_DATA = [
     category: "Diskon Pesanan",
     voucherCode: "SIPZY-DISKON-20",
     validUntil: "Berlaku 14 hari setelah penukaran",
-    image: "/src/assets/images/hero_coffee_atmosphere_1793559239277.jpg"
+    image: "/images/hero_coffee_atmosphere_1793559239277.jpg"
   },
   {
     id: "rew_03",
@@ -283,7 +283,7 @@ export const REWARDS_DATA = [
     category: "Minuman Gratis",
     voucherCode: "SIPZY-LATTE-1K",
     validUntil: "Berlaku 30 hari setelah penukaran",
-    image: "/src/assets/images/product_artisan_latte_1793559240756.jpg"
+    image: "/images/product_artisan_latte_1793559240756.jpg"
   },
   {
     id: "rew_04",
@@ -293,7 +293,7 @@ export const REWARDS_DATA = [
     category: "Pastry Gratis",
     voucherCode: "SIPZY-PASTRY-GRATIS",
     validUntil: "Berlaku 21 hari setelah penukaran",
-    image: "/src/assets/images/merchant_botanical_cafe_1793559240749.jpg"
+    image: "/images/merchant_botanical_cafe_1793559240749.jpg"
   },
   {
     id: "rew_05",
@@ -304,7 +304,7 @@ export const REWARDS_DATA = [
     merchantName: "Klinik Kopi & Roastery Kaliurang",
     voucherCode: "SIPZY-VIP-CUPPING",
     validUntil: "Berlaku 60 hari setelah penukaran",
-    image: "/src/assets/images/merchant_specialty_roastery_1793559240547.jpg"
+    image: "/images/merchant_specialty_roastery_1793559240547.jpg"
   },
   {
     id: "rew_06",
@@ -314,7 +314,7 @@ export const REWARDS_DATA = [
     category: "Minuman Gratis",
     voucherCode: "SIPZY-BTL-COLDBREW",
     validUntil: "Berlaku 30 hari setelah penukaran",
-    image: "/src/assets/images/hero_coffee_atmosphere_1793559239277.jpg"
+    image: "/images/hero_coffee_atmosphere_1793559239277.jpg"
   }
 ];
 export const PROMOTIONS_DATA = [
