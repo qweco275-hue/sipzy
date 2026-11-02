@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #9B421F;
+    --color-secondary: #C85A2A;
+    --color-accent: #E87832;
+    --color-bg: #FFF9F3;
+    --color-surface: #FFFFFF;
+    --color-soft-beige: #F5E7DA;
+    --color-text-primary: #3D2117;
+    --color-text-secondary: #8B7468;
+    font-family: 'Poppins', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    min-height: 100vh;
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5E7DA;
+}
+::-webkit-scrollbar-thumb {
+  background: #C85A2A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9B421F;
+}
+
+/* 3D Card Flip and Perspective Utilities */
+.perspective-1000 {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Scanner Laser Animation */
+@keyframes scanLaser {
+  0% {
+    top: 0%;
+    opacity: 0.9;
+  }
+  50% {
+    top: 96%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0.9;
+  }
+}
+
+.animate-scan-laser {
+  animation: scanLaser 1.6s ease-in-out infinite;
+}
+
+/* Subtle Shimmer for Loyalty Card */
+@keyframes cardShimmer {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(200%) rotate(25deg);
+  }
+}
+
+.animate-shimmer {
+  animation: cardShimmer 5s ease-in-out infinite;
+}

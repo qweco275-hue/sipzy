@@ -1,0 +1,6 @@
+{
+  "name": "SIPZY — One Platform for Coffee",
+  "description": "Good Coffee, Better Rewards. Digital coffee ecosystem connecting coffee lovers to top merchants with discovery, ordering, digital loyalty card, points, and rewards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
