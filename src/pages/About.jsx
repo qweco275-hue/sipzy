@@ -22,7 +22,7 @@ export const About = () => {
   }
       <div className="relative rounded-3xl overflow-hidden aspect-[16/8] shadow-xl border border-[#F5E7DA]">
         <img
-    src="/src/assets/images/hero_coffee_atmosphere_1793559239277.jpg"
+    src="/images/hero_coffee_atmosphere_1793559239277.jpg"
     alt="Suasana Coffee Shop Sleman"
     referrerPolicy="no-referrer"
     className="w-full h-full object-cover"
