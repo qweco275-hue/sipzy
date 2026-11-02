@@ -1,6 +1,6 @@
 {
-  "name": "SIPZY — One Platform for Coffee",
-  "description": "Good Coffee, Better Rewards. Digital coffee ecosystem connecting coffee lovers to top merchants with discovery, ordering, digital loyalty card, points, and rewards.",
+  "name": "SIPZY Sleman — Platform Kopi Terpadu",
+  "description": "Kopi Enak, Reward Lebih Banyak. Ekosistem kopi digital yang menghubungkan penikmat kopi dengan berbagai coffee shop & roastery terbaik di Sleman, Yogyakarta.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
