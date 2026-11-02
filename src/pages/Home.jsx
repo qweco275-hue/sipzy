@@ -138,7 +138,7 @@ export const Home = () => {
             Langkah Mudah & Praktis
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#3D2117] tracking-tight mt-2">
-            Cara Kerja SIPZY Sleman
+            Cara Kerja SIPZY 
           </h2>
           <p className="text-sm text-[#8B7468] mt-3">
             Tidak perlu lagi membawa tumpukan kartu stempel kertas. Kumpulkan poin dan tukarkan kopi favorit langsung dari ponsel Anda.
@@ -434,7 +434,7 @@ export const Home = () => {
     to="/register"
     className="py-3 px-6 rounded-xl bg-[#E87832] hover:bg-[#d66923] text-white font-bold text-xs shadow-lg flex items-center justify-center gap-2 transition-all"
   >
-                <span>Daftar Member SIPZY Sleman</span>
+                <span>Daftar Member SIPZY</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link

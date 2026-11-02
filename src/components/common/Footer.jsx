@@ -14,7 +14,7 @@ export const Footer = () => {
               </div>
               <div>
                 <span className="text-xl font-black tracking-tight text-white font-mono">
-                  SIPZY SLEMAN
+                  SIPZY 
                 </span>
                 <span className="block text-[10px] text-[#E87832] tracking-widest uppercase font-semibold">
                   Satu Platform Kopi Yogyakarta
@@ -29,7 +29,7 @@ export const Footer = () => {
             <div className="pt-2 text-xs text-[#F5E7DA]/70 space-y-1.5">
               <div className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#E87832]" />
-                <span>Jl. Kaliurang Km 7, Ngaglik, Sleman, D.I. Yogyakarta 55581</span>
+                <span>Sleman, D.I. Yogyakarta 55581</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#E87832]" />

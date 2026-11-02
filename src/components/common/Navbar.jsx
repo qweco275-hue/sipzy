@@ -43,9 +43,6 @@ export const Navbar = () => {
               <span className="text-xl font-black tracking-tight text-[#3D2117] group-hover:text-[#9B421F] transition-colors leading-none font-mono">
                 SIPZY
               </span>
-              <span className="text-[10px] font-bold text-white bg-[#9B421F] px-1.5 py-0.5 rounded leading-none">
-                SLEMAN
-              </span>
             </div>
             <span className="text-[10px] text-[#8B7468] tracking-wider uppercase mt-1 font-medium">
               Satu Platform Kopi
