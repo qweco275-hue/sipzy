@@ -44,7 +44,7 @@ export const Register = () => {
   }
       <div className="hidden lg:flex lg:col-span-6 relative bg-[#3D2117] overflow-hidden p-12 flex-col justify-between text-white">
         <img
-    src="/src/assets/images/auth_coffee_lifestyle_1793559241062.jpg"
+    src="/images/auth_coffee_lifestyle_1793559241062.jpg"
     alt="Coffee Lifestyle Sleman"
     referrerPolicy="no-referrer"
     className="absolute inset-0 w-full h-full object-cover opacity-60"
