@@ -161,7 +161,7 @@ export const DashboardLayout = () => {
         {
     /* Header Atas */
   }
-        <header className="sticky top-0 z-30 h-20 bg-[#FFF9F3]/90 backdrop-blur-md border-b border-[#F5E7DA] px-4 sm:px-8 flex items-center justify-between gap-4">
+        <header className="sticky top-0 z-30 h-20 bg-[#FFF9F3]/90 backdrop-blur-md border-b border-[#F5E7DA] px-3 sm:px-8 flex items-center justify-between gap-2">
           <div className="flex items-center gap-3">
             <button
     onClick={() => setSidebarOpen(true)}
@@ -223,6 +223,59 @@ export const DashboardLayout = () => {
           <Outlet />
         </main>
       </div>
+      
+{/* PREMIUM MOBILE BOTTOM NAVIGATION */}
+<nav
+  className="lg:hidden fixed bottom-0 left-0 right-0 z-[60]
+  bg-white/95 backdrop-blur-xl
+  border-t border-[#F1E2D6]
+  shadow-[0_-8px_30px_rgba(61,33,23,0.09)]"
+  style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+>
+  <div className="max-w-lg mx-auto grid grid-cols-5 px-2 pt-2 pb-1">
+    {[
+      { label: "Home", path: "/dashboard", icon: LayoutDashboard },
+      { label: "Jelajah", path: "/discover", icon: Compass },
+      { label: "Wallet", path: "/wallet", icon: Wallet },
+      { label: "Riwayat", path: "/history", icon: Clock },
+      { label: "Profil", path: "/profile", icon: User }
+    ].map((item) => {
+      const Icon = item.icon;
+      const active = location.pathname === item.path;
+
+      return (
+        <Link
+          key={item.path}
+          to={item.path}
+          className="flex flex-col items-center gap-1 py-1.5"
+        >
+          <div
+            className={`relative flex items-center justify-center
+            w-11 h-8 rounded-xl transition-all duration-200
+            ${
+              active
+                ? "bg-[#9B421F] text-white shadow-md shadow-orange-900/20"
+                : "text-[#A89487] hover:bg-[#FFF3E9]"
+            }`}
+          >
+            <Icon size={19} strokeWidth={active ? 2.5 : 1.8} />
+          </div>
+
+          <span
+            className={`text-[10px] tracking-wide
+            ${
+              active
+                ? "font-bold text-[#9B421F]"
+                : "font-medium text-[#A89487]"
+            }`}
+          >
+            {item.label}
+          </span>
+        </Link>
+      );
+    })}
+  </div>
+</nav>
 
       <ToastContainer />
     </div>;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Coffee, ShoppingBag, User as UserIcon, LogOut, LayoutDashboard, Wallet, CreditCard, ChevronDown, Menu, X, Sparkles } from "lucide-react";
+import { Coffee, ShoppingBag, User as UserIcon, LogOut, LayoutDashboard, Wallet, CreditCard, ChevronDown, Menu, X, Sparkles, Home, Compass, } from "lucide-react";
 import { useAuth } from "../../context/AuthContext";
 import { useApp } from "../../context/AppContext";
 export const Navbar = () => {
@@ -246,4 +246,97 @@ export const Navbar = () => {
             </div>}
         </div>}
     </header>;
+    {/* MOBILE BOTTOM NAVIGATION */}
+<nav
+  className="md:hidden fixed bottom-0 left-0 right-0 z-[70]
+  bg-white/95 backdrop-blur-xl
+  border-t border-[#F1E2D6]
+  shadow-[0_-8px_25px_rgba(61,33,23,0.08)]"
+  style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+>
+  <div className="grid grid-cols-5 max-w-lg mx-auto px-2 pt-2 pb-1">
+
+    {[
+      {
+        label: "Beranda",
+        path: "/",
+        icon: Home,
+        active: location.pathname === "/"
+      },
+      {
+        label: "Jelajah",
+        path: "/discover",
+        icon: Compass,
+        active: location.pathname.startsWith("/discover")
+      },
+      {
+        label: isAuthenticated ? "Wallet" : "Rewards",
+        path: isAuthenticated ? "/wallet" : "/rewards",
+        icon: Wallet,
+        active: location.pathname.startsWith(
+          isAuthenticated ? "/wallet" : "/rewards"
+        )
+      },
+      {
+        label: "Riwayat",
+        path: isAuthenticated ? "/history" : "/promotions",
+        icon: CreditCard,
+        active: location.pathname.startsWith(
+          isAuthenticated ? "/history" : "/promotions"
+        )
+      },
+      {
+        label: "Profil",
+        path: isAuthenticated ? "/profile" : "/login",
+        icon: UserIcon,
+        active: location.pathname.startsWith(
+          isAuthenticated ? "/profile" : "/login"
+        )
+      }
+    ].map((item) => {
+      const Icon = item.icon;
+
+      return (
+        <Link
+          key={item.label}
+          to={item.path}
+          className={`flex flex-col items-center justify-center
+          gap-1 py-2 rounded-xl transition-all duration-200
+          ${
+            item.active
+              ? "text-[#9B421F]"
+              : "text-[#A89487] hover:text-[#9B421F]"
+          }`}
+        >
+          <div
+            className={`flex items-center justify-center
+            w-10 h-7 rounded-xl transition-all
+            ${
+              item.active
+                ? "bg-[#FFF0E5]"
+                : "bg-transparent"
+            }`}
+          >
+            <Icon
+              size={21}
+              strokeWidth={item.active ? 2.5 : 1.8}
+            />
+          </div>
+
+          <span
+            className={`text-[10px] tracking-wide
+            ${
+              item.active
+                ? "font-bold"
+                : "font-medium"
+            }`}
+          >
+            {item.label}
+          </span>
+        </Link>
+      );
+    })}
+
+  </div>
+</nav>
 };

@@ -87,3 +87,188 @@
 .animate-shimmer {
   animation: cardShimmer 5s ease-in-out infinite;
 }
+
+/* =====================================
+   SIPZY MOBILE RESPONSIVE DESIGN
+===================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  main {
+    min-width: 0;
+    padding-bottom: 100px !important;
+  }
+
+  /* HEADER MOBILE */
+  header.sticky {
+    z-index: 60;
+  }
+
+  header.sticky > div:first-child {
+    height: 66px;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 10px;
+  }
+
+  header.sticky .text-xl {
+    font-size: 18px;
+  }
+
+  header.sticky .md\:hidden {
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+  /* HERO SECTION */
+  section.relative.pt-12 {
+    padding-top: 28px;
+  }
+
+  section.relative.pt-12 .grid {
+    gap: 28px;
+  }
+
+  section.relative.pt-12 h1 {
+    font-size: clamp(2.15rem, 9vw, 2.8rem);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+  }
+
+  section.relative.pt-12 p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  /* HERO BUTTON */
+  section.relative.pt-12 .pt-2.flex.flex-col {
+    gap: 10px;
+  }
+
+  section.relative.pt-12 .pt-2.flex.flex-col a {
+    min-height: 48px;
+    border-radius: 15px;
+    padding: 12px 16px;
+  }
+
+  /* STATISTIK */
+  section.relative.pt-12 .pt-6.border-t {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  section.relative.pt-12 .pt-6.border-t > .h-8 {
+    display: none;
+  }
+
+  /* SECTION TITLE */
+  section .mb-14 {
+    margin-bottom: 26px;
+  }
+
+  section h2.text-3xl,
+  section h2.text-4xl {
+    font-size: clamp(1.55rem, 6vw, 2rem);
+    line-height: 1.2;
+  }
+
+  /* CARD */
+  .rounded-3xl {
+    border-radius: 22px;
+  }
+
+  .shadow-xl {
+    --tw-shadow:
+      0 12px 28px -16px rgb(61 33 23 / .28);
+  }
+
+  /* BUTTON & INPUT */
+  button,
+  a {
+    touch-action: manipulation;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* DASHBOARD */
+  .min-h-screen.bg-\[\#FFF9F3\].flex
+  .flex-1 > header {
+    height: 64px;
+    min-height: 64px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .min-h-screen.bg-\[\#FFF9F3\].flex
+  main.flex-1 {
+    padding: 18px 14px 112px !important;
+  }
+
+  /* TABLE */
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .min-w-0 {
+    min-width: 0;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+
+  section.relative.pt-12 h1 {
+    font-size: 2rem;
+  }
+
+  header.sticky > div:first-child {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
